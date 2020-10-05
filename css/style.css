@@ -1,0 +1,54 @@
+/* body {
+    background-color: black;
+    color: white;
+}
+
+
+h3 {
+    color: blue;
+     
+ }
+ h1 {
+     color: red;
+ }
+
+ p {
+     font-size: 30px;
+ }
+
+  */
+
+/* Universal selector */
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color: purple; */
+} 
+
+/* Element Type selector */
+p {
+    /* color: green; */
+    /* text-decoration: underline; */
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+}
+
+mark {
+    background-color: green;
+}
+
+/* ID Selector */
+#h3-heading {
+    font-size: 30px;
+    color: blue;
+    background-color: pink;
+}
+
+/* Class selector */
+.second-h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    color: brown;
+}

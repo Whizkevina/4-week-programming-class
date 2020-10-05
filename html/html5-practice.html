@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Practice</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h3>
+        HTML5 Practice
+    </h3>
+<main>
+    <section>
+        <details>
+            <summary><h2>Random Article</h2></summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sequi voluptatum eum assumenda impedit a! Quia autem dolor veniam ab enim, facilis, fugit ad dignissimos suscipit, cum omnis molestiae praesentium?</p>
+            <p contenteditable="false">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum illo impedit iure ut mollitia delectus magnam minus explicabo, consectetur tempore esse molestias ipsum eos, porro doloribus. Repellat perspiciatis architecto similique?
+            </p>
+            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi architecto atque, voluptatibus odit explicabo repellendus libero labore ducimus laboriosam tempore laborum ab expedita obcaecati, nisi soluta dolorum, quae nobis officia.
+            </p>
+    </details>
+
+
+    </section>
+    
+
+    <section>
+        <img src="/html/images/html5-html-difference.png" width="500" height="500" alt="Circus" usemap="#circlemap">
+    
+        <map name="circlemap">
+            <area shape="rect" coords="67,114,207,254" href="elephant.htm">
+            <area shape="rect" coords="222,141,318, 256" href="lion.htm">
+            <area shape="rect" coords="343,111,455, 267" href="horse.htm">
+            <area shape="rect" coords="35,328,143,500" href="clown.htm">
+            <area shape="circle" coords="426,409,100" href="clown.htm">
+        </map>
+    </section>
+
+
+        <!-- <div>
+            <img src="/html/images/html5-html-difference.png" alt="html5-html-difference" width="1000" height="1000" usemap="#htmlmap">
+
+            <map name="htmlmap">
+                <area shape="rect" coords="222,141,318, 256" href="codity-test.html">
+            </map>
+        </div> -->
+    <section>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, possimus fugit? Aliquid, deserunt? <mark>Impedit ullam iste molestias ipsam culpa illo</mark> possimus adipisci magni veritatis, dolore sunt repudiandae explicabo laudantium. Cum?
+        </p>
+
+        <h3>Data attribute example</h3>
+
+        <section id="data-processing" data-custom-attr="You guys are amazing!">
+                I have a message for you
+                <p id="msg"></p>
+        </section>
+
+        <button onclick="reveal()">Click me</button>
+
+
+        <form oninput="x.value=parseInt(a.value) * parseInt(b.value)">
+            <input type="number" id="a" value="0">
+                   * <input type="number" id="b" value="0">
+                         = <output name="x" for="a b"></output>
+         </form>
+
+
+        <form action="" oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+            <input type="number" id="a" value="0"> + <input type="number" id="b" value="0"> = <output name="x" for="a b"></output>
+        </form>
+
+        <form action="" method="get">
+            <label for="smartphone">Choose your desire phone:</label>
+            <input list="smartphones" name="smartphone" id="smartphone">
+            <datalist id="smartphones">
+                <option value="Samsung"></option>
+                <option value="Sony Errison"></option>
+                <option value="Tecno"></option>
+                <option value="Iphone"></option>
+                <option value="Infinix"></option>
+            </datalist>
+        </form>
+
+
+        <form method="post">
+            <input 
+                 type="range" 
+                 name="range" 
+                 min="0" 
+                 max="100" 
+                 step="1" 
+                 value=""
+                 onchange="changeValue(event)"/>
+         </form>
+         <div class="range">
+              <output id="output" name="result">  </output>
+         </div>
+
+
+         <label for="C: Drive">Local Disk</label>
+<meter id="c" value="320" min="0" max="500">7 out of 10</meter><br>
+
+<form action="">
+    <input type="password" 
+            name="password" 
+            id="password" 
+            placeholder="6-20 chars, at least 1 digit, 1 uppercase and one lowercase letter" 
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$" autofocus required>
+    <button type="submit">Submit</button>
+</form>
+
+    <input type="color" onchange="showColor(event)">
+    <p id="colorMe">Color Me!</p>
+
+
+
+    </section>
+</main>
+
+<script>
+    function reveal() {
+   let dataDiv = document.getElementById('data-processing');
+    let value = dataDiv.dataset['customAttr'];
+   document.getElementById('msg').innerHTML = `<mark>${value}</mark>`;
+}
+</script>
+
+</body>
+</html>
